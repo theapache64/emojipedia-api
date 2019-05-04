@@ -1,7 +1,5 @@
 package com.emojipedia.models
 
-open class Emoji(
-    val emoji: String,
-    val title: String,
-    val emojiCode: String
-)
+class Emoji(emoji: String, title: String, emojiCode: String, val description: String) :
+    BaseEmoji(emoji, title, emojiCode) {
+}
