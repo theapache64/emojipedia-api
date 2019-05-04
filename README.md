@@ -3,7 +3,7 @@ An unofficial REST API for emojipedia.org
 
 ## Download
 
-Download latest jar from [here](releases)
+Download latest jar from [here](https://github.com/theapache64/emojipedia-api/releases)
 
 ## Usage
 
