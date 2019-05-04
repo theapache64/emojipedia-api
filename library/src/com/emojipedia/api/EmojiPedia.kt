@@ -104,8 +104,8 @@ object EmojiPedia {
         parseItem: (matcher: Matcher) -> T
     ): List<T> {
         val response = get(fromUrl)
-        val categoriesHtml = getBetween(response, startDelimiter, endDelimiter)
-        val matcher = regex.matcher(categoriesHtml)
+        val splitHtml = getBetween(response, startDelimiter, endDelimiter)
+        val matcher = regex.matcher(splitHtml)
         val items = mutableListOf<T>()
         while (matcher.find()) {
             items.add(parseItem(matcher))
