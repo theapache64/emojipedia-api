@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="emojipedia-api:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3b3aa13f-4839-4cba-9ab5-3ad7ad5fa8d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/BaseEmoji.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/MostPopular.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/emojipedia_api_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/EmojiPedia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/EmojiPedia.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Category.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Category.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Emoji.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Emoji.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/EmojiPedia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/com/emojipedia/api/EmojiPedia.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/BaseEmoji.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/com/emojipedia/api/models/BaseEmoji.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Category.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/com/emojipedia/api/models/Category.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Emoji.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/com/emojipedia/api/models/Emoji.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/MostPopular.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/com/emojipedia/api/models/MostPopular.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -34,22 +42,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/EmojiPedia.kt">
+        <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/EmojiPedia.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="24" />
+            <state relative-caret-position="846">
+              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
               <folding>
-                <element signature="e#24#219#0" expanded="true" />
+                <element signature="e#28#278#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +91,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Category.kt">
+        <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/Category.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
@@ -83,7 +100,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/MostPopular.kt">
+        <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/MostPopular.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
@@ -92,7 +109,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/BaseEmoji.kt">
+        <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/BaseEmoji.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
@@ -101,7 +118,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Emoji.kt">
+        <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/Emoji.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
@@ -133,7 +150,9 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/BaseEmoji.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Emoji.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/emojipedia/EmojiPedia.kt" />
+        <option value="$PROJECT_DIR$/library/src/com/emojipedia/api/EmojiPedia.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Main.kt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -149,7 +168,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="emojipedia-api" type="58d84e3e:PackageViewProjectNode" />
+              <item name="emojipedia.emojipedia-api" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="58d84e3e:PackageViewProjectNode" />
+              <item name="emojipedia.emojipedia-api" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="emojipedia.emojipedia-api.main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="58d84e3e:PackageViewProjectNode" />
+              <item name="library" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="58d84e3e:PackageViewProjectNode" />
+              <item name="library" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,37 +203,46 @@
             <path>
               <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="emojipedia" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="emojipedia" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="emojipedia-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emojipedia-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,13 +257,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.4453405" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.emojipedia" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library/src/com/emojipedia/api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,32 +323,32 @@
       <option name="presentableId" value="Default" />
       <updated>1556545346642</updated>
       <workItem from="1556545348037" duration="1772000" />
-      <workItem from="1556957170996" duration="3973000" />
+      <workItem from="1556957170996" duration="6859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5745000" />
+    <option name="totallyTimeSpent" value="8631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32868218" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32868218" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32935917" />
@@ -337,14 +392,14 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Category.kt">
+    <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/Category.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/MostPopular.kt">
+    <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/MostPopular.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
@@ -365,34 +420,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/Emoji.kt">
+    <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/Emoji.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/models/BaseEmoji.kt">
+    <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/models/BaseEmoji.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/emojipedia/EmojiPedia.kt">
+    <entry file="file://$PROJECT_DIR$/library/src/com/emojipedia/api/EmojiPedia.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="24" />
+        <state relative-caret-position="846">
+          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
           <folding>
-            <element signature="e#24#219#0" expanded="true" />
+            <element signature="e#28#278#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -402,10 +464,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>emojipedia-api:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4453405" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -413,6 +477,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>Kotlin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -424,6 +489,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>bootstrap</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -435,6 +501,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -446,7 +513,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>main|emojipedia-api</last-edited>
+          <last-edited>emojipedia.emojipedia-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -471,6 +538,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.30</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

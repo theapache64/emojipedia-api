@@ -1,4 +1,4 @@
-package com.emojipedia.models
+package com.emojipedia.api.models
 
 open class BaseEmoji(
     val emoji: String,

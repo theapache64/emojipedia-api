@@ -1,29 +1,35 @@
-package com.emojipedia
+package com.emojipedia.api
 
-import com.emojipedia.models.Category
-import com.emojipedia.models.Emoji
-import com.emojipedia.models.MostPopular
+import com.emojipedia.api.models.BaseEmoji
+import com.emojipedia.api.models.Category
+import com.emojipedia.api.models.Emoji
+import com.emojipedia.api.models.MostPopular
 import java.net.URL
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 object EmojiPedia {
 
-    private const val BASE_URL = "https://emojipedia.org/"
-    private const val SEARCH_URL = "${BASE_URL}search/?q="
+    private const val BASE_URL = "https://emojipedia.org"
+    private const val SEARCH_URL_FORMAT = "${BASE_URL}/search/?q=%s"
+    private const val CATEGORY_URL_FORMAT = "${BASE_URL}/%s"
 
     // DELIMITERS
     private const val CATEGORIES_START_DELIMITER = "<h2>Categories</h2>"
     private const val MOST_POPULAR_START_DELIMITER = "<h2>Most Popular</h2>"
+
     private const val SEARCH_START_DELIMITER = "<ol class=\"search-results\">"
     private const val SEARCH_END_DELIMITER = "</ol>"
 
     private const val CATEGORIES_END_DELIMITER = "</div>"
     private const val MOST_POPULAR_END_DELIMITER = "</div>"
 
+    private const val CATEGORY_START_DELIMITER = "<ul class=\"emoji-list\">"
+    private const val CATEGORY_END_DELIMITER = "</ul>"
+
     // REGEX
     private val EMOJI_ITEM_REGEX by lazy {
-        Pattern.compile("<li><a href=\"/(?<emojiCode>.+)/\"><span class=\"emoji\">(?<emoji>.+)</span>(?<title>.+)</a></li>")
+        Pattern.compile("<li><a href=\"/(?<emojiCode>.+)/\"><span class=\"emoji\">(?<emoji>.+)</span> (?<title>.+)</a></li>")
     }
 
     private val SEARCH_ITEM_REGEX by lazy {
@@ -38,7 +44,7 @@ object EmojiPedia {
 
     fun search(keyword: String): List<Emoji> {
         return get<Emoji>(
-            "$SEARCH_URL$keyword",
+            String.format(SEARCH_URL_FORMAT, keyword),
             SEARCH_START_DELIMITER,
             SEARCH_END_DELIMITER,
             SEARCH_ITEM_REGEX
@@ -128,6 +134,20 @@ object EmojiPedia {
                 "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0"
             )
         }.getInputStream().reader().readText()
+    }
+
+    fun getEmojis(category: Category): List<BaseEmoji> {
+        return get(
+            String.format(CATEGORY_URL_FORMAT, category.emojiCode),
+            CATEGORY_START_DELIMITER,
+            CATEGORY_END_DELIMITER,
+            EMOJI_ITEM_REGEX
+        ) { matcher ->
+            val emoji = matcher.group("emoji")
+            val title = matcher.group("title")
+            val emojiCode = matcher.group("emojiCode")
+            BaseEmoji(emoji, title, emojiCode)
+        }
     }
 
 }

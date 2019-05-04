@@ -1,12 +1,16 @@
-import com.emojipedia.EmojiPedia
+import com.emojipedia.api.EmojiPedia
 
 fun main() {
+
+    // Getting categories
     val categories = EmojiPedia.getCategories()
-    println(categories)
 
+    // Getting emojis from category
+    val categoryEmojis = EmojiPedia.getEmojis(categories[0])
+
+    // Getting popular emojis
     val mostPopular = EmojiPedia.getMostPopular()
-    println(mostPopular)
 
+    // Searching emojis
     val searchItems = EmojiPedia.search("angry")
-    println(searchItems)
 }
