@@ -1,4 +1,4 @@
-![poster](https://dummyimage.com/800x400/000/fff.png&text=emojipedia-api)
+![poster](https://dummyimage.com/1200x400/000/fff.png&text=emojipedia-api)
 
 # emojipedia-api
 An unofficial REST API for emojipedia.org
